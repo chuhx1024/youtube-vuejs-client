@@ -18,7 +18,7 @@ interface LoginPayload {
 }
 
 export const login = (data: LoginInput) => {
-    return request.post<LoginPayload>('/api/v1/users/login', data)
+    return request.post<LoginPayload>('/api/v1/user/login', data)
 }
 
 // login({
